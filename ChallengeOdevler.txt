@@ -1,0 +1,1 @@
+1 => Base Manager daki DestroyRange metodunun birden fazla nesneyi yok edebilmesini saðla.(Try catch) 

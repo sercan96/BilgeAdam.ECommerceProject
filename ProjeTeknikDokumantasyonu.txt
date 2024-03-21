@@ -1,0 +1,15 @@
+﻿1 => Yapılan incelemelere göre ilgili projenin profesyonel olarak Hybrid N-Tier mimarisinde yazılması uygun görülmüştür... .Net Core(8.0) platformunda yazılacaktır.
+
+2 => Projede acılacak katmanlar
+ENTITIES,
+CONF,
+DAL,
+BLL,
+Common (Her katman ortak kullanmak isteyebilecegi sınıfların tutulacagı katman olacaktır)
+UI(.Net Core MVC olarak düsünülmüştür)
+
+3 => Projede degişken isimleri degişkenler local variable oldugu sürece camelCase, field oldugu sürece basında _ sembolü olmak üzere camelCase ; Property , metot ve class isimleri PascalCase standartlarında yazılacaktır ve projede Türkçe karakter kullanılmayacaktır...Class isimleri kesinlikle cogul olmayacaktır.. Projede ambigiouty (tipi acık bir şekilde belli olan yapılarda tipin belirsizligini gösterecek yapılar var vs... dynamic vs... ) belirten yapılar kullanılmayacaktır. 
+
+4 => Katman isimleri Project ile baslayacak . sembolünden sonra katmansal takılarla bitecektir(Project.ENTITIES vs... )
+
+5 => Tasarım patternlerinden Generic Repository kesinlikle kullanılacaktır... Mevcut algoritmada bu tasarım patternlerinin dısında bir baska Tasarım Patterni öngörülmemektedir...Ancak projenin esnekligi buna elverişli oldugu takdirde, projenin mimari paterniyle bir cakısma olmaması kaydıyla(Bu durum özel olarak istenecek olan bir Arge süreci icerisinde hemen belirlenmek zorundadır) gerekli görülürse rahatca eklenebilecektir...
